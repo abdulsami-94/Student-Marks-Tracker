@@ -1,5 +1,7 @@
+// Variable decleration
 let students = [];
 
+// DOM Reference
 const nameInput = document.getElementById("name");
 const gradeInput = document.getElementById("grade");
 const rollnoInput = document.getElementById("rollno");
@@ -12,13 +14,14 @@ const datacommunicationMarks = document.getElementById("dataCommunication");
 const pythonMarks = document.getElementById("python");
 const javascriptMarks = document.getElementById("javascript");
 
-let totalValue;
-let averageValue;
+
 const form = document.querySelector("form");
 
+// Prevent the Form from refresh
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
+    // Fetch the Input and Convert the Value 
     const nameValue = nameInput.value;
     const gradeValue = gradeInput.value;
     const rollnoValue = Number(rollnoInput.value);
@@ -31,11 +34,15 @@ form.addEventListener('submit', function(event) {
     const datacommunicationValue = Number(datacommunicationMarks.value);
     const pythonValue = Number(pythonMarks.value);
     const javascriptValue = Number(javascriptMarks.value);
-        
+  
+    let totalValue;
+    let averageValue;
 
+    // Basic Calculation
     totalValue = englishValue + mathsValue + dataStructureValue + datacommunicationValue + pythonValue + javascriptValue ;
     averageValue = totalValue/6;
 
+        // Object
         const student = {
             name: nameValue,
             grade: gradeValue,
@@ -46,11 +53,17 @@ form.addEventListener('submit', function(event) {
             average: averageValue
         };
 
+        // Pushing the Data
         students.push(student);
         renderList();
 
+        // Reset the form
+        form.reset();
 })
 
+
+
+// Render the Data in the Screen
 function renderList() {
     const listDiv = document.getElementById("studentList");
     listDiv.innerHTML = "";
@@ -70,4 +83,3 @@ function renderList() {
     }
 }
 
-form.reset();
