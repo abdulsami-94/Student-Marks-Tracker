@@ -48,4 +48,7 @@ A simple project I built to learn how to use JavaScript Arrays and Objects.
 ---
 
 ## 📸 Screenshot
-*(Add your screenshot here once uploaded)*  
+
+![Student Tracker Preview](https://github.com/abdulsami-94/Student-Marks-Tracker/blob/main/Input.png)
+
+![Output](https://github.com/abdulsami-94/Student-Marks-Tracker/blob/main/Output.png)
