@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Mark Tracker</title>
+</head>
+<body>
+    <form accept="submit">
+        <fieldset>
+            <legend>Welcome </legend>
+        <h1>Student Marks Tracker</h1>
+
+        <label for="name">Name : </label>
+        <input type="text" name="name" id="name" required><br><br>
+
+        <label for="grade">Class : </label>
+        <input type="text" name="grade" id="grade" required><br><br>
+
+        <label for="rollno">Roll No. : </label>
+        <input type="number" name="rollno" id="rollno" required><br><br>
+
+        <label for="age">Age : </label>
+        <input type="number" name="age" id="age" required><br><br>
+
+        <h2>Marks</h2>
+        
+        <label for="english">English : </label>
+        <input type="number" name="english" id="english" required><br><br>
+
+        <label for="maths">Maths : </label>
+        <input type="number" name="maths" id="maths" required><br><br>
+
+        <label for="dataStructure">Data Structure : </label>
+        <input type="number" name="dataStructure" id="dataStructure" required><br><br>
+
+        <label for="dataCommunication">Data Communication : </label>
+        <input type="number" name="dataCommunication" id="dataCommunication" required><br><br>
+
+        <label for="python">Python : </label>
+        <input type="number" name="python" id="python" required><br><br>
+
+        <label for="javascript">JavaScript : </label>
+        <input type="number" name="javascript" id="javascript" required><br><br>
+
+        <button type="reset" id="resetBtn">Reset</button>
+        <button type="submit" id="submitBtn">Submit</button></fieldset>
+    </form>
+
+        <h2>Result</h2>
+        <div id="studentList"></div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
